@@ -7,8 +7,13 @@
 
 import UIKit
 
-class SDNewsResultsViewController: UIViewController {
+protocol SDNewsResultsProtocol: AnyObject {
+    func reloadTable()
+}
 
+class SDNewsResultsViewController: UIViewController {
+    @IBOutlet weak var newsTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

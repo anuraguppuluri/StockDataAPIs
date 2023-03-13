@@ -12,10 +12,13 @@ class SDNewsSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     
-
+    @IBAction func searchPressed(_ sender: Any) {
+        performSegue(withIdentifier: K.newsResultsSegueID, sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

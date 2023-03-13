@@ -17,12 +17,11 @@ class SDAPIManager: NSObject {
         super.init()
     }
     
-    func decodeSchools(url: String, completionHandler: @escaping (_ success: Bool, _ results: [QuotesDatum]?, _ error: String?) -> ()) {
+    func decodeQuotes(url: String, completionHandler: @escaping (_ success: Bool, _ results: [QuotesDatum]?, _ error: String?) -> ()) {
         SDNetworkManager.shared.getData(url: url) { success, data in
             if success {
                 do {
                     let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let obj = try decoder.decode(Quotes.self, from: data!)
                     completionHandler(true, obj.data, nil)
                 } catch {
@@ -35,12 +34,11 @@ class SDAPIManager: NSObject {
         }
     }
     
-    func decodeSchoolsInfo(url: String, completionHandler: @escaping (_ success: Bool, _ results: [NewsDatum]?, _ error: String?) -> ()) {
+    func decodeNews(url: String, completionHandler: @escaping (_ success: Bool, _ results: [NewsDatum]?, _ error: String?) -> ()) {
         SDNetworkManager.shared.getData(url: url) { success, data in
             if success {
                 do {
                     let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let obj = try decoder.decode(News.self, from: data!)
                     completionHandler(true, obj.data, nil)
                 } catch {

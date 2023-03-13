@@ -12,11 +12,11 @@ class SDQuotesSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let obj = SDQuotesResultsViewModel()
-        obj.loadDataSource()
     }
 
-
+    @IBAction func searchPressed(_ sender: Any) {
+        performSegue(withIdentifier: K.quotesResultsSegueID, sender: nil)
+    }
+    
 }
 

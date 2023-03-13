@@ -6,3 +6,27 @@
 //
 
 import Foundation
+import Dispatch
+
+class SDNewsResultsViewModel {
+    var delegate: SDNewsResultsProtocol?
+    var newsDataSource: [NewsDatum] = []
+    
+    func loadDataSource() {
+        SDAPIManager.shared.decodeNews(url: K.newsURL) { [self] success, news, error in
+            if success, let news = news {
+                print(news)
+                newsDataSource = news
+                DispatchQueue.main.async { [self] in
+                    delegate?.reloadTable()
+                }
+            } else {
+                print(error!)
+            }
+        }
+    }
+    
+    func segueWhenPressed(row: Int) {
+        //self.delegate?.segueToSchoolInfo(row: row)
+    }
+}

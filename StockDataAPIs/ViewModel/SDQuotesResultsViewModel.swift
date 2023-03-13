@@ -13,7 +13,7 @@ class SDQuotesResultsViewModel {
     var quotesDataSource: [QuotesDatum] = []
     
     func loadDataSource() {
-        SDAPIManager.shared.decodeSchools(url: K.quotesURL) { [self] success, quotes, error in
+        SDAPIManager.shared.decodeQuotes(url: K.quotesURL) { [self] success, quotes, error in
             if success, let quotes = quotes {
                 print(quotes)
                 quotesDataSource = quotes

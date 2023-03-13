@@ -8,7 +8,12 @@
 import UIKit
 
 class SDQuotesTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var tickerLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var exchangeLabel: UILabel!
+    @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
