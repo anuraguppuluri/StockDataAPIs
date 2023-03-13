@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A294993D29BBC1B4007F28A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294993C29BBC1B4007F28A9 /* AppDelegate.swift */; };
 		A294993F29BBC1B4007F28A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294993E29BBC1B4007F28A9 /* SceneDelegate.swift */; };
-		A294994129BBC1B4007F28A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294994029BBC1B4007F28A9 /* ViewController.swift */; };
+		A294994129BBC1B4007F28A9 /* SDQuotesSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294994029BBC1B4007F28A9 /* SDQuotesSearchViewController.swift */; };
 		A294994429BBC1B4007F28A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A294994229BBC1B4007F28A9 /* Main.storyboard */; };
 		A294994729BBC1B4007F28A9 /* StockDataAPIs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A294994529BBC1B4007F28A9 /* StockDataAPIs.xcdatamodeld */; };
 		A294994929BBC1C3007F28A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A294994829BBC1C3007F28A9 /* Assets.xcassets */; };
@@ -19,6 +19,16 @@
 		A294996329BBC1C5007F28A9 /* StockDataAPIsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294996229BBC1C5007F28A9 /* StockDataAPIsUITestsLaunchTests.swift */; };
 		A294997C29BEA5C8007F28A9 /* SDQuotesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294997B29BEA5C8007F28A9 /* SDQuotesDataModel.swift */; };
 		A294997E29BEA5DD007F28A9 /* SDNewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294997D29BEA5DD007F28A9 /* SDNewsDataModel.swift */; };
+		A294998029BEAFFD007F28A9 /* SDConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294997F29BEAFFD007F28A9 /* SDConstantsManager.swift */; };
+		A294998229BEB02C007F28A9 /* SDNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998129BEB02C007F28A9 /* SDNetworkManager.swift */; };
+		A294998429BEB075007F28A9 /* SDAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998329BEB075007F28A9 /* SDAPIManager.swift */; };
+		A294998629BEB345007F28A9 /* SDQuotesResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998529BEB345007F28A9 /* SDQuotesResultsViewController.swift */; };
+		A294998829BEB365007F28A9 /* SDNewsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998729BEB365007F28A9 /* SDNewsSearchViewController.swift */; };
+		A294998A29BEB38B007F28A9 /* SDNewsResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998929BEB38B007F28A9 /* SDNewsResultsViewController.swift */; };
+		A294998C29BEB486007F28A9 /* SDQuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998B29BEB486007F28A9 /* SDQuotesTableViewCell.swift */; };
+		A294998E29BEB4FD007F28A9 /* SDNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998D29BEB4FD007F28A9 /* SDNewsTableViewCell.swift */; };
+		A294999029BEB628007F28A9 /* SDQuotesResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998F29BEB628007F28A9 /* SDQuotesResultsViewModel.swift */; };
+		A294999229BEB64E007F28A9 /* SDNewsResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294999129BEB64E007F28A9 /* SDNewsResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +52,7 @@
 		A294993929BBC1B4007F28A9 /* StockDataAPIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockDataAPIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A294993C29BBC1B4007F28A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A294993E29BBC1B4007F28A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A294994029BBC1B4007F28A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A294994029BBC1B4007F28A9 /* SDQuotesSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesSearchViewController.swift; sourceTree = "<group>"; };
 		A294994329BBC1B4007F28A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A294994629BBC1B4007F28A9 /* StockDataAPIs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockDataAPIs.xcdatamodel; sourceTree = "<group>"; };
 		A294994829BBC1C3007F28A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +66,16 @@
 		A294996F29BE82E5007F28A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A294997B29BEA5C8007F28A9 /* SDQuotesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesDataModel.swift; sourceTree = "<group>"; };
 		A294997D29BEA5DD007F28A9 /* SDNewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsDataModel.swift; sourceTree = "<group>"; };
+		A294997F29BEAFFD007F28A9 /* SDConstantsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConstantsManager.swift; sourceTree = "<group>"; };
+		A294998129BEB02C007F28A9 /* SDNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNetworkManager.swift; sourceTree = "<group>"; };
+		A294998329BEB075007F28A9 /* SDAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDAPIManager.swift; sourceTree = "<group>"; };
+		A294998529BEB345007F28A9 /* SDQuotesResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesResultsViewController.swift; sourceTree = "<group>"; };
+		A294998729BEB365007F28A9 /* SDNewsSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsSearchViewController.swift; sourceTree = "<group>"; };
+		A294998929BEB38B007F28A9 /* SDNewsResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsResultsViewController.swift; sourceTree = "<group>"; };
+		A294998B29BEB486007F28A9 /* SDQuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesTableViewCell.swift; sourceTree = "<group>"; };
+		A294998D29BEB4FD007F28A9 /* SDNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsTableViewCell.swift; sourceTree = "<group>"; };
+		A294998F29BEB628007F28A9 /* SDQuotesResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesResultsViewModel.swift; sourceTree = "<group>"; };
+		A294999129BEB64E007F28A9 /* SDNewsResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsResultsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +178,8 @@
 		A294997229BE99CD007F28A9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A294998F29BEB628007F28A9 /* SDQuotesResultsViewModel.swift */,
+				A294999129BEB64E007F28A9 /* SDNewsResultsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,6 +205,8 @@
 		A294997529BE9A15007F28A9 /* SDNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				A294998129BEB02C007F28A9 /* SDNetworkManager.swift */,
+				A294998329BEB075007F28A9 /* SDAPIManager.swift */,
 			);
 			path = SDNetworking;
 			sourceTree = "<group>";
@@ -190,6 +214,7 @@
 		A294997629BE9A31007F28A9 /* SDConstants */ = {
 			isa = PBXGroup;
 			children = (
+				A294997F29BEAFFD007F28A9 /* SDConstantsManager.swift */,
 			);
 			path = SDConstants;
 			sourceTree = "<group>";
@@ -206,7 +231,10 @@
 		A294997929BE9A77007F28A9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A294994029BBC1B4007F28A9 /* ViewController.swift */,
+				A294994029BBC1B4007F28A9 /* SDQuotesSearchViewController.swift */,
+				A294998529BEB345007F28A9 /* SDQuotesResultsViewController.swift */,
+				A294998729BEB365007F28A9 /* SDNewsSearchViewController.swift */,
+				A294998929BEB38B007F28A9 /* SDNewsResultsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -214,6 +242,8 @@
 		A294997A29BE9A89007F28A9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A294998B29BEB486007F28A9 /* SDQuotesTableViewCell.swift */,
+				A294998D29BEB4FD007F28A9 /* SDNewsTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -349,12 +379,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A294994129BBC1B4007F28A9 /* ViewController.swift in Sources */,
+				A294994129BBC1B4007F28A9 /* SDQuotesSearchViewController.swift in Sources */,
 				A294994729BBC1B4007F28A9 /* StockDataAPIs.xcdatamodeld in Sources */,
 				A294997C29BEA5C8007F28A9 /* SDQuotesDataModel.swift in Sources */,
+				A294998629BEB345007F28A9 /* SDQuotesResultsViewController.swift in Sources */,
+				A294998029BEAFFD007F28A9 /* SDConstantsManager.swift in Sources */,
 				A294997E29BEA5DD007F28A9 /* SDNewsDataModel.swift in Sources */,
+				A294998C29BEB486007F28A9 /* SDQuotesTableViewCell.swift in Sources */,
+				A294998429BEB075007F28A9 /* SDAPIManager.swift in Sources */,
+				A294998A29BEB38B007F28A9 /* SDNewsResultsViewController.swift in Sources */,
+				A294999229BEB64E007F28A9 /* SDNewsResultsViewModel.swift in Sources */,
+				A294999029BEB628007F28A9 /* SDQuotesResultsViewModel.swift in Sources */,
+				A294998229BEB02C007F28A9 /* SDNetworkManager.swift in Sources */,
 				A294993D29BBC1B4007F28A9 /* AppDelegate.swift in Sources */,
 				A294993F29BBC1B4007F28A9 /* SceneDelegate.swift in Sources */,
+				A294998829BEB365007F28A9 /* SDNewsSearchViewController.swift in Sources */,
+				A294998E29BEB4FD007F28A9 /* SDNewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

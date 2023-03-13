@@ -9,23 +9,23 @@ import Foundation
 
 // MARK: - Quotes
 struct Quotes: Codable {
-    let meta: QuotesMeta
-    let data: [QuotesDatum]
+    let meta: QuotesMeta?
+    let data: [QuotesDatum]?
 }
 
-// MARK: - Datum
+// MARK: - QuotesDatum
 struct QuotesDatum: Codable {
-    let ticker, name, exchangeShort, exchangeLong: String
-    let micCode, currency: String
-    let price, dayHigh, dayLow, dayOpen: Double
-    let the52_WeekHigh, the52_WeekLow: Double
-    let marketCap: Int
-    let previousClosePrice: Double
-    let previousClosePriceTime: String
-    let dayChange: Double
-    let volume: Int
-    let isExtendedHoursPrice: Bool
-    let lastTradeTime: String
+    let ticker, name, exchangeShort, exchangeLong: String?
+    let micCode, currency: String?
+    let price, dayHigh, dayLow, dayOpen: Double?
+    let the52_WeekHigh, the52_WeekLow: Double?
+    let marketCap: Int?
+    let previousClosePrice: Double?
+    let previousClosePriceTime: String?
+    let dayChange: Double?
+    let volume: Int?
+    let isExtendedHoursPrice: Bool?
+    let lastTradeTime: String?
 
     enum CodingKeys: String, CodingKey {
         case ticker, name
@@ -50,5 +50,5 @@ struct QuotesDatum: Codable {
 
 // MARK: - Meta
 struct QuotesMeta: Codable {
-    let requested, returned: Int
+    let requested, returned: Int?
 }
