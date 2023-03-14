@@ -15,7 +15,7 @@ class SDQuotesResultsViewModel {
     func loadDataSource() {
         SDAPIManager.shared.decodeQuotes(url: K.quotesURL) { [self] success, quotes, error in
             if success, let quotes = quotes {
-                print(quotes)
+                //print(quotes)
                 quotesDataSource = quotes
                 DispatchQueue.main.async { [self] in
                     delegate?.reloadTable()

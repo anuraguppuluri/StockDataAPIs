@@ -22,5 +22,5 @@ struct K
     static let quotesCellHeight = 193
     
     static let newsCellID = "newsCell"
-    static let newsCellHeight = 193
+    static let newsCellHeight = 293
 }
