@@ -242,12 +242,16 @@
                                                     <buttonConfiguration key="configuration" style="filled" title="View Story">
                                                         <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="viewStoryPressed:" destination="GeR-Xc-GOt" eventType="touchUpInside" id="OC3-Xo-wyQ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="mpU-HH-2VE" id="Jj2-Wm-rJc"/>
                                             <outlet property="titleLabel" destination="jnf-b2-bUX" id="h7K-Rn-xwI"/>
+                                            <outlet property="viewStoryButton" destination="Jgv-do-0e3" id="EG3-TM-mPH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -266,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="2692.753623188406" y="770.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--News Website View Controller-->
         <scene sceneID="rkV-Rq-eqw">
             <objects>
-                <viewController id="AQC-04-sWI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newsWebsiteView" id="AQC-04-sWI" customClass="SDNewsWebsiteViewController" customModule="StockDataAPIs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wiD-Zj-vjP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,6 +292,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fLj-Ml-kiJ"/>
+                    <connections>
+                        <outlet property="newsWebView" destination="udO-Iv-xMk" id="4op-x9-nqT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeD-Kj-M0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

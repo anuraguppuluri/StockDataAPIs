@@ -8,6 +8,7 @@
 import UIKit
 
 protocol SDNewsResultsProtocol: AnyObject {
+    func segueToNewsWebsite(row: Int)
     func reloadTable()
 }
 
@@ -51,6 +52,10 @@ class SDNewsResultsViewController: UIViewController, UITableViewDelegate, UITabl
         return populateCell(row: indexPath.row)
     }
     
+    @IBAction func viewStoryPressed(_ sender: UIButton) {
+        vm.segueWhenPressed(row: sender.tag)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -77,7 +82,19 @@ extension SDNewsResultsViewController {
         if let description = vm.newsDataSource[row].description {
             cell.descriptionLabel.text = description
         }
+        cell.viewStoryButton.tag = row
         return cell
+    }
+    
+    func segueToNewsWebsite(row: Int) {
+        let vc: SDNewsWebsiteViewController? = storyboard?.instantiateViewController(withIdentifier: K.newsWebsiteViewID) as? SDNewsWebsiteViewController
+        guard let vc = vc else {
+            print("vc not created!")
+            return
+        }
+        print("vc created!")
+        vc.newsWebsite = vm.newsDataSource[row].url
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func reloadTable() {

@@ -15,12 +15,13 @@ struct K
     static let quotesResultsSegueID = "quotesResultsSegue"
     static let newsResultsSegueID = "newsResultsSegue"
     
-    static let schoolsViewID = "schoolsView"
-    static let schoolInfoViewID = "schoolInfoView"
+    static let quotesResultsViewID = "quotesResultsView"
+    static let newsResultsViewID = "newsResultsView"
+    static let newsWebsiteViewID = "newsWebsiteView"
     
     static let quotesCellID = "quotesCell"
     static let quotesCellHeight = 193
     
     static let newsCellID = "newsCell"
-    static let newsCellHeight = 293
+    static let newsCellHeight = 413
 }

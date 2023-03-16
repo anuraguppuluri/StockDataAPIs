@@ -10,6 +10,7 @@ import UIKit
 class SDNewsTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var viewStoryButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

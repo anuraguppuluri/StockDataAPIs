@@ -29,6 +29,7 @@
 		A294998E29BEB4FD007F28A9 /* SDNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998D29BEB4FD007F28A9 /* SDNewsTableViewCell.swift */; };
 		A294999029BEB628007F28A9 /* SDQuotesResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294998F29BEB628007F28A9 /* SDQuotesResultsViewModel.swift */; };
 		A294999229BEB64E007F28A9 /* SDNewsResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294999129BEB64E007F28A9 /* SDNewsResultsViewModel.swift */; };
+		A294999429C1FFF6007F28A9 /* SDNewsWebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294999329C1FFF6007F28A9 /* SDNewsWebsiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A294998D29BEB4FD007F28A9 /* SDNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsTableViewCell.swift; sourceTree = "<group>"; };
 		A294998F29BEB628007F28A9 /* SDQuotesResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQuotesResultsViewModel.swift; sourceTree = "<group>"; };
 		A294999129BEB64E007F28A9 /* SDNewsResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsResultsViewModel.swift; sourceTree = "<group>"; };
+		A294999329C1FFF6007F28A9 /* SDNewsWebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNewsWebsiteViewController.swift; sourceTree = "<group>"; };
+		A294999529C360EA007F28A9 /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 				A294994D29BBC1C3007F28A9 /* Info.plist */,
 				A294996F29BE82E5007F28A9 /* README.md */,
 				A294994529BBC1B4007F28A9 /* StockDataAPIs.xcdatamodeld */,
+				A294999529C360EA007F28A9 /* NOTES.md */,
 			);
 			path = StockDataAPIs;
 			sourceTree = "<group>";
@@ -235,6 +239,7 @@
 				A294998529BEB345007F28A9 /* SDQuotesResultsViewController.swift */,
 				A294998729BEB365007F28A9 /* SDNewsSearchViewController.swift */,
 				A294998929BEB38B007F28A9 /* SDNewsResultsViewController.swift */,
+				A294999329C1FFF6007F28A9 /* SDNewsWebsiteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				A294998429BEB075007F28A9 /* SDAPIManager.swift in Sources */,
 				A294998A29BEB38B007F28A9 /* SDNewsResultsViewController.swift in Sources */,
 				A294999229BEB64E007F28A9 /* SDNewsResultsViewModel.swift in Sources */,
+				A294999429C1FFF6007F28A9 /* SDNewsWebsiteViewController.swift in Sources */,
 				A294999029BEB628007F28A9 /* SDQuotesResultsViewModel.swift in Sources */,
 				A294998229BEB02C007F28A9 /* SDNetworkManager.swift in Sources */,
 				A294993D29BBC1B4007F28A9 /* AppDelegate.swift in Sources */,
