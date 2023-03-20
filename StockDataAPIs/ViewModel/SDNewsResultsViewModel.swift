@@ -15,8 +15,8 @@ class SDNewsResultsViewModel {
     func loadDataSource() {
         SDAPIManager.shared.decodeNews(url: K.newsURL) { [self] success, news, error in
             if success, let news = news {
-                print(news)
                 print(news.count)
+                print(news)
                 newsDataSource = news
                 DispatchQueue.main.async { [self] in
                     delegate?.reloadTable()
